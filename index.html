@@ -10,37 +10,97 @@
   <header class="page-header">
     <nav class="page-navigation">
       <a class="page-logo">
-        <img src="" width="" height="" alt="">
+        <img class="logo" src="" width="" height="" alt="Логотип города Седона">
       </a>
-      <ul>
-        <li>Главная</li>
-        <li><a href="#">О Седоне</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+      <ul class="navigation-list">
+        <li class="navigation-item">Главная</li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
       </ul>
-      <form>
-        <!-- Строка поиска -->
+
+      <!-- Строка поиска? -->
+      <!-- <form>
         <input type="">
-      </form>
-      <ul>
-        <li>
-          <a href="#"></a>
+      </form> -->
+
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
         </li>
-        <li>
-          <button class="button">Хочу сюда!</button>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
         </li>
-      </ul>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Хочу сюда!</a>
+        </li>
     </nav>
   </header>
 
-  <main>
+  <main class="main-index">
     <section>
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ol class="advantages-list">
+        <li class="advantages-item">
+          <h3>Настоящий городок</h3>
+          <p>— №1 —</p>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
+          <ul class="advantages-item-list">
+            <li>
+              <img class="" src="" width="" height="" alt="Жильё">
+              <p>Жильё</p>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li>
+              <img class="" src="" width="" height="" alt="Еда">
+              <p>Еда</p>
+              <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li>
+              <img class="" src="" width="" height="" alt="Сувениры">
+              <p>Сувениры</p>
+              <p>Не только китайского, но и настоящего местного производства!</p>
+            </li>
+          </ul>
+
+        </li>
+        <li class="advantages-item">
+          <h3>Там есть мост дьявола</h3>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </li>
+        <li class="advantages-item">
+          <h3>Небольшая площадь</h3>
+          <p>— №3 —</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="advantages-item">
+          <h3>Красивая дорога</h3>
+          <p>— №4 —</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages-item">
+          <h3>Мало туристов</h3>
+          <p>— №5 —</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ol>
+
+    </section>
+
     <section>
 
     </section>
-    <section></section>
+
   </main>
 
   <footer class="page-footer">
@@ -55,20 +115,26 @@
     </section>
 
 
-    <ul>
-      <li><a href="https://vk.com/htmlacademy">
+    <ul class="footer-socials">
+      <li>
+        <a href="https://vk.com/htmlacademy">
           <img src="" width="" height="" alt="">
-        </a></li>
-      <li><a href="https://t.me/htmlacademy">
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/htmlacademy">
           <img src="" width="" height="" alt="">
-        </a></li>
-      <li><a href="https://www.youtube.com/user/htmlacademyru">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/user/htmlacademyru">
           <img src="" width="" height="" alt="">
-        </a></li>
+        </a>
+      </li>
     </ul>
     <a href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
     <a href="https://htmlacademy.ru/">
-      <img src="footer-logo" width="" height="" alt="">
+      <img class="footer-logo" src="" width="" height="" alt="">
     </a>
 
   </footer>
