@@ -21,7 +21,7 @@
       </ul>
       <form>
         <!-- Строка поиска -->
-        <input type="">
+        <input class="" type="text">
       </form>
       <ul>
         <li>
@@ -34,12 +34,60 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hotels-filters"></section>
-    <form action="">
-      <button type="submit">Применить</button>
-      <input type="reset" value="Сбросить">
-    </form>
+  <main class="hotels-main">
+    <section class="hotels-filters">
+      <h1 class="hotels-filters-heading">Гостиницы Седоны</h1>
+
+      <ul class="hotels-breadcrumbs">
+        <li>
+          <a href="index.html"></a>
+        </li>
+        <li>
+          <a>Гостиницы</a>
+        </li>
+      </ul>
+
+      <form action="" method="">
+        <fieldset class="">
+          <legend>Инфраструктура</legend>
+          <label class="" for="">
+            <input class="" type="checkbox" id="" name="pool" value="">
+            Бассейн
+          </label>
+          <label>
+            <input class="" type="checkbox" name="" value="">
+            Парковка
+          </label>
+          <label>
+            <input class="" type="checkbox" name="" value="">
+            Wi-Fi
+          </label>         
+        </fieldset>
+
+        <fieldset class="">
+          <legend>Тип жилья:</legend>
+          <label class="" for="">
+            <input class="" type="radio" id="" name="pool" value="">
+            Гостиница
+          </label>
+          <label>
+            <input class="" type="radio" name="" value="">
+            Мотель
+          </label>
+          <label>
+            <input class="" type="radio" name="" value="">
+            Апартаменты
+          </label>         
+        </fieldset>
+
+
+
+        <p>Тип жилья:</p>
+
+
+        <button type="submit">Применить</button>
+        <input type="reset" value="Сбросить">
+      </form>
     </section>
 
     <section class="hotels-find-results">
