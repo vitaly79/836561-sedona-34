@@ -62,7 +62,7 @@
 
     <section class="hotels-filters">
       <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
-      <form class="hotels-searching" action="" method="">
+      <form class="hotels-searching" action="" method="get">
         <fieldset class="hotels-searching-advantages">
           <legend class="hotels-searching-heading">Инфраструктура</legend>
           <label class="" for="pool">
@@ -97,10 +97,11 @@
 
         <fieldset class="hotels-searching-price">
           <legend class="hotels-searching-heading">Стоимость, ₽:</legend>
-          <input class="" type="number" placeholder="от">
-          <input class="" type="number" placeholder="до">
+          <input class="" type="number" id="min-value" name="" placeholder="0">
+          <label for="min-value">от</label>
+          <input class="" type="number" id="max-value" name="" placeholder="9000">
+          <label for="max-value">до</label>
         </fieldset>
-
 
         <button class="butoon-submit" type="submit">Применить</button>
         <button class="button-reset" type="reset">Сбросить</button>
@@ -113,8 +114,9 @@
         <label class="find-results-heading">Найдено гостиниц:
           <input class="" type="number" id="" value="38" disabled>
         </label>
-        <select class="" name="sorting">
+        <select class="find-results-sorting" name="sorting">
           <option>Сначала дешевые</option>
+          <option>Сначала дорогие</option>
         </select>
 
         <ul class="find-results-grid">
@@ -134,37 +136,79 @@
             </button>
           </li>
         </ul>
+
       </header>
 
       <div class="find-results-container">
-        <div class="results-card">
-          <img class="results-card-image" src="" width="300" height="211" alt="Звездное небо между скалами">
-          <h3 class="results-card-title"></h3>
-
-        </div>
+        <article class="hotel-card">
+          <img class="hotel-card-image" src="" width="300" height="211" alt="Звездное небо между скалами">
+          <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          <p class="hotel-card-category">Гостиница</p>
+          <span class="hotel-card-price"></span>
+          <a class="button" href="#">подробнее</a>
+          <button class="button" type="button">в избранное</button>
+          <span>Рейтинг: 8,5</span>
+        </article>
+        <article class="hotel-card">
+          <img class="hotel-card-image" src="" width="300" height="211" alt="радуга на фоне гор Седоны">
+          <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+          <p class="hotel-card-category">Гостиница</p>
+          <span class="hotel-card-price"></span>
+          <a class="button" href="#">подробнее</a>
+          <button class="button" type="button">в избранном</button>
+          <span>Рейтинг: 9,2</span>
+        </article>
+        <article class="hotel-card">
+          <img class="hotel-card-image" src="" width="300" height="211" alt="Красные скалы Седоны в ясный солнечный день">
+          <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          <p class="hotel-card-category">Гостиница</p>
+          <span class="hotel-card-price"></span>
+          <a class="button" href="#">подробнее</a>
+          <button class="button" type="button">в избранное</button>
+          <span>Рейтинг: 6,9</span>
+        </article>
+        <article class="hotel-card">
+          <img class="hotel-card-image" src="" width="300" height="211" alt="Красные скалы Седоны на фоне ночного неба">
+          <h3 class="hotel-card-title">GreenTree Inn</h3>
+          <p class="hotel-card-category">Гостиница</p>
+          <span class="hotel-card-price"></span>
+          <a class="button" href="#">подробнее</a>
+          <button class="button" type="button">в избранное</button>
+          <span>Рейтинг: 5,0</span>
+        </article>
       </div>
 
       <footer class="results-footer">
         <ol class="results-pagination">
-          <li class="">
+          <li class="results-pagination-item">
             <a href="#">1</a>
           </li>
-          <li class="">
+          <li class="results-pagination-item">
             <a href="#">2</a>
           </li>
-          <li class="">
+          <li class="results-pagination-item">
             <a href="#">3</a>
           </li>
-          <li class="">
+          <li class="results-pagination-item">
             <a href="#">4</a>
           </li>
-          <li class="">
+          <li class="results-pagination-item">
             <a href="#">...</a>
           </li>
-          <li class="">
+          <li class="results-pagination-item">
             <a href="#">10</a>
           </li>
         </ol>
+        
+        <form class="result-amount">
+          <label for="search-result-amount">Гостиниц на странице:</label>
+          <select name="search-result-amount" id="search-result-amount">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four" selected>4</option>
+          </select>
+        </form>
 
       </footer>
 
