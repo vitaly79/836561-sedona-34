@@ -63,18 +63,18 @@
     <section class="hotels-filters">
       <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
       <form class="hotels-searching" action="" method="get">
-        <fieldset class="hotels-searching-advantages">
+        <fieldset class="hotels-searching-infrastructure">
           <legend class="hotels-searching-heading">Инфраструктура</legend>
           <label class="" for="pool">
-            <input class="" type="checkbox" id="pool" name="pool" checked>
+            <input class="" type="checkbox" id="pool" name="infrastructure" checked>
             Бассейн
           </label>
           <label class="" for="parking">
-            <input class="" type="checkbox" id="parking" name="parking" checked>
+            <input class="" type="checkbox" id="parking" name="infrastructure" checked>
             Парковка
           </label>
           <label class="" for="wi-fi">
-            <input class="" type="checkbox" id="wi-fi" name="wi-fi">
+            <input class="" type="checkbox" id="wi-fi" name="infrastructure">
             Wi-Fi
           </label>
         </fieldset>
@@ -103,8 +103,8 @@
           <label for="max-value">до</label>
         </fieldset>
 
-        <button class="butoon-submit" type="submit">Применить</button>
-        <button class="button-reset" type="reset">Сбросить</button>
+        <button class="button button-submit" type="submit">Применить</button>
+        <button class="button button-reset" type="reset">Сбросить</button>
       </form>
     </section>
 
@@ -114,9 +114,9 @@
         <label class="find-results-heading">Найдено гостиниц:
           <input class="" type="number" id="" value="38" disabled>
         </label>
-        <select class="find-results-sorting" name="sorting">
-          <option>Сначала дешевые</option>
-          <option>Сначала дорогие</option>
+        <select class="find-results-sorting" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
         </select>
 
         <ul class="find-results-grid">
@@ -144,69 +144,70 @@
           <img class="hotel-card-image" src="" width="300" height="211" alt="Звездное небо между скалами">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           <p class="hotel-card-category">Гостиница</p>
-          <span class="hotel-card-price"></span>
+          <span class="hotel-card-price">От 4000 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button" type="button">в избранное</button>
-          <span>Рейтинг: 8,5</span>
+          <span class="hotel-rating">Рейтинг: 8,5</span>
         </article>
         <article class="hotel-card">
           <img class="hotel-card-image" src="" width="300" height="211" alt="радуга на фоне гор Седоны">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           <p class="hotel-card-category">Гостиница</p>
-          <span class="hotel-card-price"></span>
+          <span class="hotel-card-price">От 5000 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button" type="button">в избранном</button>
-          <span>Рейтинг: 9,2</span>
+          <span class="hotel-rating">Рейтинг: 9,2</span>
         </article>
         <article class="hotel-card">
-          <img class="hotel-card-image" src="" width="300" height="211" alt="Красные скалы Седоны в ясный солнечный день">
+          <img class="hotel-card-image" src="" width="300" height="211"
+            alt="Красные скалы Седоны в ясный солнечный день">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <p class="hotel-card-category">Гостиница</p>
-          <span class="hotel-card-price"></span>
+          <span class="hotel-card-price">От 2500 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button" type="button">в избранное</button>
-          <span>Рейтинг: 6,9</span>
+          <span class="hotel-rating">Рейтинг: 6,9</span>
         </article>
         <article class="hotel-card">
           <img class="hotel-card-image" src="" width="300" height="211" alt="Красные скалы Седоны на фоне ночного неба">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
           <p class="hotel-card-category">Гостиница</p>
-          <span class="hotel-card-price"></span>
+          <span class="hotel-card-price">От 1500 ₽</span>
           <a class="button" href="#">подробнее</a>
           <button class="button" type="button">в избранное</button>
-          <span>Рейтинг: 5,0</span>
+          <span class="hotel-rating">Рейтинг: 5,0</span>
         </article>
       </div>
 
       <footer class="results-footer">
         <ol class="results-pagination">
-          <li class="results-pagination-item">
-            <a href="#">1</a>
+          <li class="results-pagination-item pagination-current">
+            <a class="pagination-link">1</a>
           </li>
           <li class="results-pagination-item">
-            <a href="#">2</a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="results-pagination-item">
-            <a href="#">3</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="results-pagination-item">
-            <a href="#">4</a>
+            <a class="pagination-link" href="#">4</a>
           </li>
           <li class="results-pagination-item">
-            <a href="#">...</a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="results-pagination-item">
-            <a href="#">10</a>
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ol>
-        
+
         <form class="result-amount">
           <label for="search-result-amount">Гостиниц на странице:</label>
           <select name="search-result-amount" id="search-result-amount">
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four" selected>4</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
           </select>
         </form>
 
