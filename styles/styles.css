@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: #fff;
+  color: #000;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*header*/
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+/*main*/
+
+.main-header {
+  background-color: #000;
+  background-image: url(../images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-description {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-description h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.main-description p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*section class="advantages"*/
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-list .advantages-item {
+  /* background-color: #82b3d3;*/
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-item-list li:not(:nth-child(2)) {
+  background-color: rgba(222, 11, 204, 0.92);
+}
+
+/*section class="searching"*/
+
+.searching-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.searching p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+
+.searching .searching-button {
+  /*display: block;
+  width: 574px;*/
+  padding: 12px 15px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*footer*/
+
+.footer-subscribe {
+  background-color: #000;
+  background-image: url(../images/footer-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.footer-subscribe-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.footer-subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer-subscribe-form input {
+  font-family: "PT Sans";
+  font-style: normal;
+  background-color: #f2f2f2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.footer-subscribe-form .button-submit {
+  border: none;
+  background: #82b3d3;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*section class="footer-contacts"*/
+
+.footer-contacts {
+
+}
