@@ -14,12 +14,17 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 28px;
-  background-color: #fff;
-  color: #000;
+  background-color: #f2f2f2;
 }
 
 .button {
@@ -34,7 +39,17 @@ body {
   text-transform: uppercase;
 }
 
-/* .visually-hidden {
+.page-container {
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+}
+
+ /* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -49,8 +64,20 @@ body {
 
 /* header */
 
+.page-navigation {
+  display: flex;
+}
+
 .navigation-list {
+  width: 390px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.navigation-user {
+  width: 264px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -59,6 +86,10 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000;
+}
+
+.navigation-list button {
+  color: #fff;
 }
 
 .favourite-number {
@@ -72,11 +103,20 @@ body {
 
 /* main */
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-header {
   background-color: #000;
   background-image: url(../images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.advantages-item-logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-description {
@@ -102,11 +142,13 @@ body {
 /* section class="advantages" */
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
 
-.advantages-list>.dark-blue {
+.advantages-list > .dark-blue {
   background-color: #82b3d3;
   /* text-align: center; */
 }
@@ -124,6 +166,8 @@ body {
 }
 
 .advantages-item-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -139,6 +183,12 @@ body {
 } */
 
 /* section class="searching" */
+
+.searching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .searching-heading {
   font-weight: 700;
@@ -157,8 +207,8 @@ body {
 }
 
 .searching .searching-button {
-  /*display: block;
-  width: 574px;*/
+  /* display: block; */
+  width: 574px;
   padding: 12px 15px;
   font-size: 20px;
   line-height: 36px;
@@ -216,18 +266,26 @@ body {
 
 /* footer */
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-social-list {
+  width: 142px;
   list-style: none;
 }
 
 /*
-.footer-contacts .button-vk{
+.page-footer .button-vk{
   background-image: url(../images/social-vk.svg);
   background-repeat: no-repeat;
 }
 */
 
-.footer-contacts .phone-number {
+.page-footer .phone-number {
+  width: 331px;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -240,7 +298,7 @@ body {
 
 /* modal */
 
-.index-modal legend {
+.modal-legend h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
