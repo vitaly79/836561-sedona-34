@@ -282,13 +282,13 @@ body {
   color: #000000;
   opacity: 0.6;
   border: none;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .subscribe-form .button-submit {
   border: none;
   background: #82b3d3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   font-size: 20px;
   line-height: 36px;
 }
