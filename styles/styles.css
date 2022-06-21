@@ -28,6 +28,8 @@ body {
 }
 
 .button {
+  display: block;
+  border-radius: 4px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -274,12 +276,15 @@ body {
 /* section class="searching" */
 
 .searching {
+  padding: 91px 0 93px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .searching-heading {
+  margin-top: 0;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -288,6 +293,9 @@ body {
 }
 
 .searching p {
+  width: 592px;
+  margin-top: 0;
+  margin-bottom: 56px;
   text-align: center;
   font-weight: 400;
   font-size: 22px;
@@ -297,6 +305,7 @@ body {
 
 .searching .searching-button {
   /* display: block; */
+  box-sizing: border-box;
   width: 574px;
   padding: 12px 15px;
   font-size: 20px;
@@ -305,7 +314,13 @@ body {
 
 /* subscribe */
 
+.subscribe {
+  padding: 94px 0;
+}
+
 .subscribe-heading {
+  margin-top: 0;
+  margin-bottom: 29px;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
@@ -315,6 +330,8 @@ body {
 
 .subscribe-description {
   width: 475px;
+  margin-top: 0;
+  margin-bottom: 46px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -322,10 +339,13 @@ body {
 }
 
 .subscribe-form {
+  display: flex;
   text-align: center;
 }
 
 .subscribe-form input {
+  width: 600px;
+  padding: 20px 22px 19px;
   font-family: "PT Sans";
   font-style: normal;
   background-color: #f2f2f2;
@@ -339,6 +359,8 @@ body {
 }
 
 .subscribe-form .button-submit {
+  width: 200px;
+  height: 60px;
   border: none;
   background: #82b3d3;
   border-radius: 0 10px 10px 0;
