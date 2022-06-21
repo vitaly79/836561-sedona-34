@@ -486,6 +486,7 @@ body {
 /* hotels-filters */
 
 .main-hotels .hotels-filters {
+  padding: 35px 70px 70px;
   background-color: #000;
   background-image: url(../images/filters-background.jpg);
   background-repeat: no-repeat;
@@ -494,6 +495,8 @@ body {
 }
 
 .hotels-filters .hotels-filters-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -501,12 +504,23 @@ body {
 }
 
 .hotels-breadcrumbs {
-  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
+
+.breadcrumbs-item {
+  margin-right: 25px;
+}
+
+/* form */
 
 .hotels-searching {
   display: flex;
@@ -554,20 +568,39 @@ body {
   text-transform: none;
 }
 
+/* .hotels-find-results */
+
+
+.hotels-find-results {
+  padding: 50px 72px 25px;
+}
+
+.find-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
 .find-results-heading {
+  width: 338px;
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
-.find-results-heading input {
+/* .find-results-heading input {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000;
-}
+} */
 
 .find-results-sorting {
+  box-sizing: border-box;
+  width: 290px;
+  padding: 14px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   font-style: normal;
@@ -577,10 +610,41 @@ body {
 }
 
 .find-results-grid {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.button-grid-link {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-grid-current {
+  border: 2px solid #000000;
 }
 
 /* find-results-container */
+
+.find-results-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 66px;
+  column-gap: 18px; /* Временно */
+  outline: 2px solid greenyellow;
+}
+
+.hotel-card {
+  padding: 20px;
+  outline: 1px solid slateblue;
+}
 
 .hotel-card .hotel-card-title {
   font-style: normal;
@@ -617,10 +681,17 @@ body {
 
 /* results-footer */
 .results-pagination {
-  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .results-pagination .pagination-link {
+  display: block;
+  margin-right: 8px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #82b3d3;
   border-radius: 4px;
   font-style: normal;

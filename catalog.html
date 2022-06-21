@@ -38,22 +38,28 @@
               <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
-              <span class="favourite-number">12</span>
+              <a class="navigation-link favourite-number" href="#"><span class="visually-hidden">Избранное</span></a>
+              <!-- <span class="favourite-number">12</span> -->
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+              <a class="navigation-link button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
+
       <main class="main-container main-hotels">
         <section class="hotels-filters">
           <div class="filters-header">
             <h1 class="hotels-filters-title">Гостиницы Седоны</h1>
             <ul class="hotels-breadcrumbs">
               <li class="breadcrumbs-item item-homepage">
-                <a class="breadcrumbs-link" href="index.html"></a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <svg width="20" height="20" fill="fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 3 4 8.8V15h12V8.8L10 3Zm5 11H5V9.2l5-4.8 5 4.8V14Z" fill="#fff" />
+                    <path d="M8 13h1v-2.5h2V13h1V9.5H8V13Z" fill="#fff" />
+                  </svg>
+                </a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -103,15 +109,20 @@
             <button class="button button-reset" type="reset">Сбросить</button>
           </form>
         </section>
+
         <section class="hotels-find-results">
           <header class="find-results-header">
             <h2 class=" visually-hidden">Результаты поиска</h2>
-            <label class="find-results-heading">Найдено гостиниц:
-              <input class="" type="number" id="" value="38" disabled>
-            </label>
+            <p class="find-results-heading">Найдено гостиниц:
+              <span class="find-results-number">38</span>
+            </p>
+            <!-- <label class="find-results-heading">Найдено гостиниц:
+              <input class="find-results-number" type="number" id="" value="38" disabled>
+            </label> -->
             <select class="find-results-sorting" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
             </select>
             <ul class="find-results-grid">
               <li class="results-grid-item">
@@ -131,6 +142,7 @@
               </li>
             </ul>
           </header>
+
           <div class="find-results-container">
             <article class="hotel-card">
               <img class="hotel-card-image" src="images/hotels/Amara-Resort-Spa.jpg" width="300" height="211"
@@ -209,7 +221,7 @@
           <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form">
-            <input type="email" name="user-email" placeholder="Ваш e-mail">
+            <input type="email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="button button-submit" type="submit">Подписаться</button>
           </form>
         </section>
