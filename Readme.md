@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виталий Гаранжа](https://up.htmlacademy.ru/htmlcss/34/user/836561).
-* Наставник: Антон Попов.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
