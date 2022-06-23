@@ -142,7 +142,6 @@ body {
   font-size: 10px;
   line-height: 13px;
   letter-spacing: -0.1em;
-  z-index: 1;
 }
 
 .navigation-user .button {
@@ -395,6 +394,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.main-index-subscribe {
   color: #fff;
   background-color: #000;
   background-image: url(../images/footer-background.jpg);
