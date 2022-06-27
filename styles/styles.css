@@ -126,6 +126,7 @@ body {
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
 }
 
 .favourite-number::after {
@@ -674,17 +675,22 @@ body {
 /* find-results-container */
 
 .find-results-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 66px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  /* Временно */
-  outline: 1px solid greenyellow;
+  margin-bottom: 66px;
 }
 
 .hotel-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px min-content auto auto auto;
   padding: 20px;
   outline: 1px solid slateblue;
+}
+
+.hotel-card .hotel-card-title-link {
+  text-decoration: none;
 }
 
 .hotel-card .hotel-card-title {
@@ -692,6 +698,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000;
 }
 
 .hotel-card .hotel-card-category,
