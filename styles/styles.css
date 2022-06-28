@@ -126,7 +126,6 @@ body {
   background-image: url(../images/heart.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
 }
 
 .favourite-number::after {
@@ -462,7 +461,6 @@ body {
   color: #756157;
 }
 
-
 /* modal */
 
 .modal-legend h2 {
@@ -611,7 +609,6 @@ body {
 
 /* .hotels-find-results */
 
-
 .hotels-find-results {
   padding: 50px 72px 25px;
 }
@@ -629,6 +626,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 /* .find-results-heading input {
@@ -664,7 +662,7 @@ body {
   box-sizing: border-box;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -684,16 +682,25 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px min-content auto auto auto;
+  grid-template-rows: 211px min-content auto auto auto;
+  gap: 16px 20px;
   padding: 20px;
   outline: 1px solid slateblue;
 }
 
+.hotel-card-image-link {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
 .hotel-card .hotel-card-title-link {
+  grid-column: 1/-1;
+  grid-row: 2/3;
   text-decoration: none;
 }
 
 .hotel-card .hotel-card-title {
+  margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -709,7 +716,31 @@ body {
   color: #333333;
 }
 
+.hotel-card-category {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0;
+}
+
+.hotel-card-price {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.hotel-card .button {
+  box-sizing: border-box;
+  width: 140px;
+  padding: 9px 15px 8px;
+}
+
+.button-detail {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
 .hotel-card .favorites {
+  grid-column: 2/3;
+  grid-row: 4/5;
   border-radius: 4px;
   background: #82b3d3;
   border: none;
@@ -719,7 +750,20 @@ body {
   background: #7db54f;
 }
 
+.hotel-card-stars {
+  outline: 1px solid tomato;
+  display: flex;
+  align-items: center;
+}
+
+.hotel-star {
+  margin-right: 6px;
+}
+
 .hotel-card .hotel-rating {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  padding: 9px 22px 8px 23px;
   font-style: normal;
   font-weight: 400;
   background-color: #f2f2f2;
@@ -764,7 +808,7 @@ body {
 }
 
 .results-pagination .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .results-pagination .pagination-current {
@@ -774,7 +818,7 @@ body {
 }
 
 .results-pagination .pagination-current:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .result-amount label {
