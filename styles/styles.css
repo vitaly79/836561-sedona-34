@@ -86,7 +86,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 17px;
+  gap: 34px;
   width: 520px;
   margin: 0;
   padding: 0 17px;
@@ -272,7 +272,10 @@ body {
 }
 
 .advantages-item-list .advantages-item {
-  padding: 80px 85px;
+  padding: 182px 85px 81px;
+  background-image: url(../images/souvenir.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .advantages-title {
@@ -420,22 +423,27 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 142px;
+  width: 190px;
   list-style-type: none;
 }
 
 .footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 40px;
   outline: 1px solid #ff5757;
 }
 
-/*
-.page-footer .button-vk{
-  background-image: url(../images/social-vk.svg);
-  background-repeat: no-repeat;
+.social-button:hover,
+.social-button:focus {
+  fill: #68A2CA;
 }
-*/
+
+.social-button:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
 
 .page-footer .phone-number {
   width: 331px;
@@ -453,13 +461,28 @@ body {
   color: #756157;
 }
 
+.page-footer .phone-number:focus {
+  color: #756157;
+}
+
 .page-footer .phone-number:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.page-footer .phone-number:focus {
-  color: #756157;
+.footer-logo:hover {
+  fill: #756157;
+  ;
 }
+
+.footer-logo:focus {
+  fill: #756157;
+}
+
+.footer-logo:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+
 
 /* modal */
 
@@ -621,7 +644,7 @@ body {
 }
 
 .find-results-heading {
-  width: 338px;
+  width: 372px;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
