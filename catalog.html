@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <link rel="icon" href="favicon.svg">
   </head>
 
   <body>
@@ -67,8 +68,8 @@
             </ul>
           </div>
           <h2 class="visually-hidden">Фильтры для выбора гостиницы</h2>
-          <form class="hotels-searching" action="" method="get">
-            <fieldset class="hotels-searching-infrastructure">
+          <form class="hotels-searching-form" action="" method="get">
+            <fieldset class="hotels-searching hotels-searching-infrastructure">
               <legend class="hotels-searching-heading">Инфраструктура</legend>
               <label class="" for="pool">
                 <input class="" type="checkbox" id="pool" name="infrastructure" checked>
@@ -83,7 +84,7 @@
                 Wi-Fi
               </label>
             </fieldset>
-            <fieldset class="hotels-searching-type">
+            <fieldset class="hotels-searching hotels-searching-type">
               <legend class="hotels-searching-heading">Тип жилья:</legend>
               <label class="" for="type-one">
                 <input class="" type="radio" id="type-one" name="type-of-housing" value="type-hotel" checked>
@@ -98,15 +99,19 @@
                 Апартаменты
               </label>
             </fieldset>
-            <fieldset class="hotels-searching-price">
+            <fieldset class="hotels-searching hotels-searching-price">
               <legend class="hotels-searching-heading">Стоимость, ₽:</legend>
-              <input class="value" type="number" id="min-value" name="" placeholder="0">
-              <label for="min-value">от</label>
-              <input class="value" type="number" id="max-value" name="" placeholder="9000">
-              <label for="max-value">до</label>
+              <div class="input-container">
+                <label class="visually-hidden" for="min-value">от</label>
+                <input class="value value-from" type="number" id="min-value" name="" value="0">
+                <label class="visually-hidden" for="max-value">до</label>
+                <input class="value value-to" type="number" id="max-value" name="" value="9000">
+              </div>
             </fieldset>
-            <button class="button button-submit" type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+            <div class="hotels-searching buttons-container">
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
 
@@ -168,7 +173,7 @@
               <a class="button button-detail" href="#">подробнее</a>
               <button class="button favorites button-current" type="button">в избранном</button>
               <div class="hotel-card-stars">
-                <img class="hotel-star" src="/images/star.svg" width="18" height="17"></img>
+                <img class="hotel-star" src="images/star.svg" width="18" height="17"></img>
               </div>
               <span class="button hotel-rating">Рейтинг: 9,2</span>
             </article>
@@ -185,10 +190,10 @@
               <a class="button button-detail" href="#">подробнее</a>
               <button class="button favorites" type="button">в избранное</button>
               <div class="hotel-card-stars">
-                <img class="hotel-star" src="/images/star.svg" width="18" height="17"></img>
-                <img class="hotel-star" src="/images/star.svg" width="18" height="17"></img>
-                <img class="hotel-star" src="/images/star.svg" width="18" height="17"></img>
-                <img class="hotel-star" src="/images/star.svg" width="18" height="17"></img>
+                <img class="hotel-star" src="images/star.svg" width="18" height="17"></img>
+                <img class="hotel-star" src="images/star.svg" width="18" height="17"></img>
+                <img class="hotel-star" src="images/star.svg" width="18" height="17"></img>
+                <img class="hotel-star" src="images/star.svg" width="18" height="17"></img>
               </div>
               <span class="button hotel-rating">Рейтинг: 6,9</span>
             </article>
