@@ -178,6 +178,17 @@ body {
   line-height: 20px;
 }
 
+.navigation-user .button:hover,
+.navigation-user .button:focus {
+  background-color: #615048;
+}
+
+
+.navigation-user .button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* .favourite-number {
   background-color: #7db54f;
   border-radius: 50%;
@@ -463,6 +474,7 @@ body {
 }
 
 .subscribe-form .button-submit:active {
+  background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -517,6 +529,7 @@ body {
 }
 
 .page-footer .phone-number:focus {
+  outline: none;
   color: #756157;
 }
 
@@ -534,6 +547,7 @@ body {
 
 .footer-logo:focus {
   fill: #756157;
+  outline: none;
 }
 
 .footer-logo:active {
@@ -658,10 +672,10 @@ body {
   /* text-align: center; */
   /* vertical-align: middle; */
 }
-/*
+
 .breadcrumbs-item:last-child::after {
   content: none;
-} */
+}
 
 .breadcrumbs-link {
   cursor: pointer;
@@ -715,7 +729,11 @@ body {
 
 .hotels-searching-price {
   width: 288px;
-  margin-left: 175px;
+  margin-left: 176px;
+}
+
+.hotels-searching-price legend {
+  margin-bottom: 34px;
 }
 
 .hotels-searching-form label {
@@ -732,11 +750,12 @@ body {
 
 .input-container {
   display: flex;
+  position: relative;
 }
 
 .input-container::before {
   content: "от";
-  position: relative;
+  position: absolute;
   top: 12px;
   left: 128px;
   width: 17px;
@@ -750,7 +769,7 @@ body {
 
 .input-container::after {
   content: "до";
-  position: relative;
+  position: absolute;
   top: 13px;
   right: 38px;
   width: 17px;
@@ -774,6 +793,21 @@ body {
   background: none;
 }
 
+.hotels-searching-price .value:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.hotels-searching-price .value:focus {
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  outline: none;
+}
+
+.hotels-searching-price .value:active {
+  box-shadow: none;
+  background-color: #756257;
+}
+
+
 .hotels-searching .value-from {
   border-radius: 4px 0 0 4px;
 }
@@ -789,7 +823,7 @@ body {
 
 .hotels-searching.buttons-container {
   margin-left: auto;
-  padding-top: 55px;
+  padding-top: 60px;
 }
 
 .hotels-searching-form .button-submit {
@@ -801,7 +835,19 @@ body {
   border: none;
 }
 
+.hotels-searching-form .button-submit:hover,
+.hotels-searching-form .button-submit:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.hotels-searching-form .button-submit:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotels-searching-form .button-reset {
+  width: 160px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -811,6 +857,20 @@ body {
   border: none;
   text-transform: none;
   cursor: pointer;
+}
+
+.hotels-searching-form .button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hotels-searching-form .button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.hotels-searching-form .button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 /* .hotels-find-results */
@@ -840,14 +900,36 @@ body {
 .find-results-sorting {
   box-sizing: border-box;
   width: 290px;
-  padding: 10px 14px;
+  padding: 10px 18px;
   border: 2px solid #e5e5e5;
+  /* background-image: url(../images/arrow.svg); */
   border-radius: 4px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
+  appearance: none;
+  cursor: pointer;
 }
+
+.find-results-sorting:hover,
+.find-results-sorting:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.find-results-sorting:active {
+  border: 2px solid #3F5E72;
+}
+
+.find-results-sorting:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}
+
+
 
 /* Изменение отображения результатов поиска */
 
@@ -890,13 +972,18 @@ body {
 }
 
 .button-view-link:focus {
+  outline: none;
   border: 2px solid #68a2ca;
 }
 
 .button-view-link:hover {
+  outline: none;
   border: 2px solid #000;
 }
 
+.button-view-link:active {
+  border: 2px solid #000;
+}
 
 /* find-results-container */
 
@@ -982,16 +1069,48 @@ body {
   grid-row: 4/5;
 }
 
+.button-detail:hover,
+.button-detail:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-detail:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotel-card .favorites {
   grid-column: 2/3;
   grid-row: 4/5;
   border-radius: 4px;
   background: #82b3d3;
-  border: none;
+}
+
+.hotel-card .favorites:hover,
+.hotel-card .favorites:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.hotel-card .favorites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-card .button-current {
   background: #7db54f;
+}
+
+.hotel-card .button-current:hover,
+.hotel-card .button-current:focus {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.hotel-card .button-current:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-stars-container {
@@ -1021,11 +1140,15 @@ body {
 }
 
 .hotel-card .hotel-rating {
+  display: block;
   grid-column: 2/3;
   grid-row: 5/6;
   padding: 9px 22px 8px 23px;
-  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
   background-color: #f2f2f2;
   border-radius: 4px;
   color: #333333;
@@ -1053,7 +1176,8 @@ body {
   display: block;
   box-sizing: border-box;
   width: 60px;
-  padding: 11.5px 0 12.5px;
+  padding: 10.5px 0 11.5px;
+  border: 1px solid #82B3D3;
   border-radius: 4px;
   font-style: normal;
   font-weight: 700;
@@ -1066,8 +1190,16 @@ body {
   color: #fff;
 }
 
-.results-pagination .pagination-link:hover {
+.results-pagination .pagination-link:hover,
+.results-pagination .pagination-link:focus {
   background-color: #68a2ca;
+  border: 1px solid #82B3D3;
+  outline: none;
+}
+
+.results-pagination .pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .results-pagination .pagination-current {
@@ -1078,6 +1210,7 @@ body {
 
 .results-pagination .pagination-current:hover {
   background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .result-amount label {
