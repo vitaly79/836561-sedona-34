@@ -65,21 +65,26 @@
           <form class="hotels-searching-form" action="" method="get">
             <fieldset class="hotels-searching hotels-searching-infrastructure">
               <legend class="hotels-searching-heading">Инфраструктура:</legend>
-              <label class="" for="pool">
-                <input class="" type="checkbox" id="pool" name="infrastructure" checked>
-                Бассейн
+              <label class="control" for="pool">
+                <input class="visually-hidden control-input" type="checkbox" id="pool" name="infrastructure" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
               </label>
-              <label class="" for="parking">
-                <input class="" type="checkbox" id="parking" name="infrastructure" checked>
-                Парковка
+              <label class="control" for="parking">
+                <input class="visually-hidden control-input" type="checkbox" id="parking" name="infrastructure" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
               </label>
-              <label class="" for="wi-fi">
-                <input class="" type="checkbox" id="wi-fi" name="infrastructure">
-                Wi-Fi
+              <label class="control" for="wi-fi">
+                <input class="visually-hidden control-input" type="checkbox" id="wi-fi" name="infrastructure">
+                <span class="control-mark"></span>
+                <span class="control-label">Wi-Fi</span>
               </label>
             </fieldset>
+
             <fieldset class="hotels-searching hotels-searching-type">
-              <legend class="hotels-searching-heading">Тип жилья:</legend>
+
+              <!-- <legend class="hotels-searching-heading">Тип жилья:</legend>
               <label class="" for="type-one">
                 <input class="" type="radio" id="type-one" name="type-of-housing" value="type-hotel" checked>
                 Гостиница
@@ -91,7 +96,30 @@
               <label class="" for="type-three">
                 <input class="" type="radio" id="type-three" name="type-of-housing" value="type-apartments">
                 Апартаменты
+              </label> -->
+
+              <label class="control" for="type-one">
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
+              <label class="control" for="type-two">
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
+              </label>
+              <label class="control" for="type-three">
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="accessories">
+                <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
+              </label>
+
+
+
+
+
+
+
             </fieldset>
             <fieldset class="hotels-searching hotels-searching-price">
               <legend class="hotels-searching-heading">Стоимость, ₽:</legend>
@@ -101,6 +129,19 @@
                 <label class="value-to-label" for="max-value">до</label>
                 <input class="value value-to" type="number" id="max-value" name="" value="9000">
               </div>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 10px; width: 217px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
             </fieldset>
             <div class="hotels-searching buttons-container">
               <button class="button button-submit" type="submit">Применить</button>
@@ -151,7 +192,7 @@
               <span class="hotel-card-price">От 4000 ₽</span>
               <a class="button button-detail" href="#">подробнее</a>
               <button class="button favorites" type="button">в избранное</button>
-              <div class="hotel-card-stars"></div>
+              <div class="hotel-stars-container four-stars"></div>
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </article>
             <article class="hotel-card">
@@ -187,7 +228,7 @@
               <span class="hotel-card-price">От 2500 ₽</span>
               <a class="button button-detail" href="#">подробнее</a>
               <button class="button favorites" type="button">в избранное</button>
-              <div class="hotel-card-stars">
+              <div class="hotel-stars-container three-stars">
               </div>
               <span class="hotel-rating">Рейтинг: 6,9</span>
             </article>
@@ -203,7 +244,7 @@
               <span class="hotel-card-price">От 1500 ₽</span>
               <a class="button button-detail" href="#">подробнее</a>
               <button class="button favorites" type="button">в избранное</button>
-              <div class="hotel-card-stars"></div>
+              <div class="hotel-stars-container two-stars"></div>
               <span class="hotel-rating">Рейтинг: 5,0</span>
             </article>
           </div>
