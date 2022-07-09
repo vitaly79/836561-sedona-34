@@ -2,19 +2,18 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
 
   <body>
     <div class="page-container">
-
       <header class="page-header">
         <nav class="page-navigation">
           <a class="page-logo" href="index.html">
-            <img class="header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип города Седона">
+            <img class="header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип города Седона" />
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -27,16 +26,28 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
+          <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link button-search" href="#"><span class="visually-hidden">Поиск</span></a>
+              <a class="navigation-link" href="#">
+                <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+                </svg>
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link favourite-number" href="#"><span class="visually-hidden">Избранное</span></a>
-              <!-- <span class="favourite-number">12</span> -->
+              <a class="navigation-link favourite-number" href="#">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.0143 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
+                <span class="visually-hidden">Избранное</span>
+                <span class="favourite-number-amount">12</span>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link button" href="#">Хочу сюда!</a>
+              <a class="button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +56,7 @@
       <main class="main-container main-index">
         <header class="main-header">
           <img class="advantages-item-logo" src="images/welcome-logo.svg" width="458" height="352"
-            alt="Добро пожаловать в великолепный город Седона">
+            alt="Добро пожаловать в великолепный город Седона" />
         </header>
         <section class="main-description">
           <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -58,65 +69,102 @@
               <div class="advantages-item advantages-item-container">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-number">— №1 —</p>
-                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages-description">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
               </div>
               <img class="advantages-item-image" src="images/advantages-1.jpg" width="800" height="384"
-                alt="Двухэтажный нежилой дом коммерческого использования">
+                alt="Двухэтажный нежилой дом коммерческого использования" />
               <ul class="advantages-item-list">
                 <li class="advantages-item item-home light-blue">
                   <p class="advantages-title">Жильё</p>
-                  <p class="advantages-description">Рекомендуем пожить <br> в настоящем мотеле,<br> всё как в кино!</p>
+                  <p class="advantages-description">
+                    Рекомендуем пожить <br />
+                    в настоящем мотеле,<br />
+                    всё как в кино!
+                  </p>
                 </li>
                 <li class="advantages-item item-food">
                   <p class="advantages-title">Еда</p>
-                  <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
+                  <p class="advantages-description">
+                    Всегда заказывайте<br />
+                    топовый фирменный бургер,<br />
+                    вы не разочаруетесь!
                   </p>
                 </li>
                 <li class="advantages-item item-souvenir light-blue">
                   <p class="advantages-title">Сувениры</p>
-                  <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+                  <p class="advantages-description">
+                    Не только китайского,<br />
+                    но и настоящего местного<br />
+                    производства!
+                  </p>
                 </li>
               </ul>
             </li>
             <li class="flex-item dark-light-blue">
               <img class="advantages-item-image" src="images/advantages-2.jpg" width="800" height="384"
-                alt="Мост дьявола">
+                alt="Мост дьявола" />
               <div class="advantages-item advantages-item-container">
-                <h3 class="advantages-title">Там есть <br> мост дьявола</h3>
+                <h3 class="advantages-title">
+                  Там есть <br />
+                  мост дьявола
+                </h3>
                 <p class="advantages-number">— №2 —</p>
-                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <p class="advantages-description">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
               </div>
             </li>
             <li class="advantages-item light-blue">
               <h3 class="advantages-title">Небольшая площадь</h3>
               <p class="advantages-number">— №3 —</p>
-              <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+              <p class="advantages-description">
+                Все достопримечательности находятся очень близко
+              </p>
             </li>
             <li class="advantages-item blue">
-              <h3 class="advantages-title">Красивая<br> дорога</h3>
+              <h3 class="advantages-title">
+                Красивая<br />
+                дорога
+              </h3>
               <p class="advantages-number">— №4 —</p>
-              <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages-description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
             </li>
             <li class="advantages-item light-blue">
-              <h3 class="advantages-title">Мало<br> туристов</h3>
+              <h3 class="advantages-title">
+                Мало<br />
+                туристов
+              </h3>
               <p class="advantages-number">— №5 —</p>
-              <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="advantages-description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
             </li>
           </ol>
         </section>
 
         <section class="searching">
           <h2 class="searching-heading">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;</p>
+          <p>
+            Укажите предполагаемые даты поездки, <br />
+            и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;
+          </p>
           <a class="button searching-button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
 
         <section class="subscribe main-index-subscribe">
           <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
           <form class="subscribe-form">
-            <input type="email" name="user-email" placeholder="Ваш e-mail">
-            <button class="button button-submit" type="submit">Подписаться</button>
+            <input type="email" name="user-email" placeholder="Ваш e-mail" />
+            <button class="button button-submit" type="submit">
+              Подписаться
+            </button>
           </form>
         </section>
       </main>
@@ -171,10 +219,10 @@
 
     <!-- Модальное окно -->
 
-    <!-- <section class="index-modal">
+    <section class="index-modal">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form action="" method="">
-        <fieldset>
+        <fieldset class="modal-fieldset">
           <legend class="modal-legend">
             <h2>Поиск гостиницы в Седоне</h2>
           </legend>
@@ -207,8 +255,7 @@
           <button class="button modal-button" type="submit">Найти</button>
         </fieldset>
       </form>
-    </section> -->
-
+    </section>
   </body>
 
 </html>
