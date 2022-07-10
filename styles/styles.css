@@ -636,9 +636,9 @@ body {
   z-index: 2;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -699,12 +699,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  text-transform: capitalize;
 }
 
 .modal-date-label {
   display: flex;
   justify-content: space-between;
+  text-transform: capitalize;
 }
 
 .modal-line {
@@ -752,19 +752,17 @@ body {
 .modal-adults-container,
 .modal-kids-container {
   display: flex;
+  align-items: center;
 }
 
 .modal-adults-label {
   margin-right: 64px;
 }
 
-.modal-kids-label {
-  margin-right: 51px;
-}
 
 .kids-label-icon {
   position: relative;
-  padding-right: 16px;
+  margin-right: 49px;
 }
 
 .modal-input-people {
@@ -796,8 +794,8 @@ body {
 
 .tooltip {
   position: absolute;
-  margin-top: 4px;
-  margin-left: 2px;
+  margin-top: 3px;
+  margin-left: 5px;
   width: 25px;
   height: 25px;
 }
@@ -815,11 +813,14 @@ body {
 }
 
 
-.tooltip-toggle:hover .tooltip-icon {
-  color: #AF7842;
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
 }
 
 .tooltip-text {
+  /* display: none; */
+  position: absolute;
+  top: 40px;
   box-sizing: border-box;
   width: 256px;
   background-color: #333333;
@@ -828,10 +829,9 @@ body {
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
-  padding: 15px 18px 18px 22px;
-  position: absolute;
-  transform: translateX(-50%);
-  display: none;
+  padding: 15px 18px 23px 22px;
+
+  transform: translateX(-115px);
 }
 
 .tooltip-text::before {
@@ -841,7 +841,7 @@ body {
   width: 19px;
   height: 9px;
   top: -9px;
-  left: 50%;
+  left: 118px;
   position: absolute;
 }
 
