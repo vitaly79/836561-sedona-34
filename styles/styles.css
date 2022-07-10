@@ -151,12 +151,12 @@ body {
   outline: none;
 }
 
-.navigation-user .navigation-link:hover svg,
-.navigation-user .navigation-link:focus svg {
+.navigation-link:hover svg,
+.navigation-link:focus svg {
   fill: #756157;
 }
 
-.navigation-user .navigation-link:active svg {
+.navigation-link:active svg {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -340,6 +340,10 @@ body {
 .advantages-item-list .item-home {
   background-image: url(../images/home.svg);
   background-position: 50% 80px;
+}
+
+.item-home .advantages-description {
+  padding: 0 20px;
 }
 
 .advantages-item-list .item-food {
@@ -612,9 +616,9 @@ body {
   z-index: 2;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
