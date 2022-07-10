@@ -598,30 +598,6 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/* modal */
-
-
-
-
-
-.index-modal input::placeholder {
-  color: #000;
-}
-
-.modal-line-tooltip {}
-
-.modal-error {
-  color: #ff5757;
-}
-
-.modal-button {
-  background: #83b3d3;
-  border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  line-height: 36px;
-}
-
 /* модальное окно */
 
 
@@ -636,9 +612,9 @@ body {
   z-index: 2;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -734,6 +710,20 @@ body {
   right: 0;
 }
 
+.modal-searching-form input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-searching-form input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-searching-form input:active {
+  background-color: #fff;
+  outline: 2px solid #000000;;
+}
+
+
 .modal-line-tooltip {
   position: absolute;
   font-weight: 400;
@@ -741,6 +731,10 @@ body {
   line-height: 21px;
   top: 58px;
   left: 154px
+}
+
+.modal-error {
+  color: #ff5757;
 }
 
 .modal-people-container {
@@ -853,6 +847,27 @@ body {
 .modal-button {
   width: 100%;
   padding: 12px 26px;
+}
+
+.modal-button {
+  background: #83b3d3;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus {
+  outline: 3px solid #756257;
+}
+
+.modal-button:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* catalog.html */
