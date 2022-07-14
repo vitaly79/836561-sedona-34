@@ -1442,7 +1442,7 @@ body {
   box-sizing: border-box;
   width: 140px;
   padding: 9px 15px 8px;
-  /* align-self: center; */
+  align-self: center;
 }
 
 .button-detail {
