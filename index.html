@@ -2,10 +2,11 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -149,7 +150,7 @@
         <section class="searching">
           <h2 class="searching-heading">Заинтересовались?</h2>
           <p>
-            Укажите предполагаемые даты поездки, <br />
+            Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;
           </p>
           <a class="button searching-button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
@@ -160,8 +161,8 @@
           <p class="subscribe-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form class="subscribe-form">
-            <input type="email" name="user-email" placeholder="Ваш e-mail" />
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="button button-submit" type="submit">Подписаться</button>
           </form>
         </section>
@@ -229,14 +230,14 @@
             <p class="modal-line modal-line-arrival">
               <label class="modal-date-label" for="date-arrival"> Дата заезда:
                 <input class="modal-input-date" type="text" id="date-arrival" name="arrival-date"
-                  placeholder="27 апреля 2020">
+                  placeholder="27 апреля 2020" required>
               </label>
               <span class="modal-line-tooltip modal-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="modal-line modal-line-departure">
               <label class="modal-date-label" for="date-departure"> Дата выезда:
                 <input class="modal-input-date" type="text" id="date-departure" name="departure-date"
-                  placeholder="1 сентября 2021">
+                  placeholder="1 сентября 2021" required>
               </label>
               <span class="modal-line-tooltip">На эти даты есть свободные номера. Пока есть.</span>
             </p>
@@ -244,7 +245,7 @@
               <div class="modal-adults-container">
                 <label class="modal-adults-label" for="amount-adults"> Взрослые:</label>
                 <button class="modal-amount-button modal-amount-remove" type="button"></button>
-                <input class="modal-input-people" type="text" id="amount-adults" name="amount-adults" placeholder="2">
+                <input class="modal-input-people" type="text" id="amount-adults" name="amount-adults" placeholder="2" required>
                 <button class="modal-amount-button modal-amount-add" type="button"></button>
               </div>
               <div class="modal-kids-container">
@@ -257,7 +258,7 @@
                           <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
                         </g>
                         <defs>
-                          <clipPath id="a">
+                          <clipPath id="b">
                             <path fill="#fff" d="M0 0h1v9H0z" />
                           </clipPath>
                         </defs>
@@ -268,7 +269,7 @@
                   </span>
                 </span>
                 <button class="modal-amount-button modal-amount-remove" type="button"></button>
-                <input class="modal-input-people" type="text" id="amount-kids" name="amount-kids" placeholder="1">
+                <input class="modal-input-people" type="text" id="amount-kids" name="amount-kids" placeholder="1" required>
                 <button class="modal-amount-button modal-amount-add" type="button"></button>
               </div>
             </div>
